@@ -1,0 +1,536 @@
+html {
+    background-color: burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttons{
+    height: 40px;
+    padding-top: 20px;
+    padding-left: -200px;
+    padding-right: -100px;
+    width: 20px;
+    background-color: #deb875;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -10px;
+}
+b {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.highlight{
+        color: red;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: -277px;
+    }
+@media screen and ((min-width: 320px) and (max-width: 730px)){
+    .main{
+        border: 2px solid #deb875;
+        padding: 15px;
+        width: 600px;
+        height: 1400px;
+    }
+    
+    h1{
+        position: relative;
+        left: 150px;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    
+    
+    .cake, 
+    .bisquit, 
+    .pie{
+        border-radius: 10px;
+        border: 1px solid gray;
+        width: 200px;
+        height: 100px;
+        margin-left: 200px;
+        background-color: rgb(114, 109, 109);
+        justify-content: space-around;
+    }
+
+    .cake > p,
+    .bisquit > p,
+    .pie > p,
+    hr{
+        display: none;
+    }
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 100px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .assortiment{
+        width: 300px;
+        height: 600px;
+        display: grid;
+        margin: 0px 0px 10px 25px;
+        grid-template-columns: 200px;
+        grid-template-rows: 200px;
+        column-gap: 5px;
+        position: absolute;
+        top: 280px;
+    }
+    .contacts{
+        position: absolute;
+        top: 1350px;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link{
+        color:dodgerblue;
+        position: absolute;
+        top: 20px;
+    }
+    .copy{
+        position: absolute;
+        left: 500px;
+    }
+    
+    .link::after{
+        content: '\2709';
+    }
+
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 200px;
+        border: none;
+        width: 320px;
+        height: 160px;
+        background-color: initial;
+    }
+
+    .sidebar > nav{
+        display: none;
+    }
+    
+    .buttons{
+        background-color: lightsalmon;
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(255, 160, 122, 0.3);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .assortiment > .bisquit,
+    #cake:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    #cake:checked ~ .main > .assortiment,
+    #cake:checked ~ .main > .assortiment{
+        height: 1040px;
+    }
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 1370px;
+    }
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 1330px;
+    }
+    #bisquit:checked ~ .main > .assortiment > .cake,
+    #bisquit:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    #bisquit:checked ~ .main > .assortiment,
+    #pie:checked ~ .main > .assortiment{
+        height: 600px;
+    }
+
+    #bisquit:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 700px;
+    }
+    #bisquit:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 750px;
+    }
+    #pie:checked ~ .main > .assortiment > .bisquit,
+    #pie:checked ~ .main > .assortiment > .cake{
+        display: none;
+    }
+    #pie:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 930px;
+    }
+    
+    
+
+/*Tablet*/
+
+    
+
+    
+}
+
+
+@media screen and ((min-width: 730px) and (max-width: 1200px)){
+    body {
+        width:1200px;
+    }
+    .main{
+        border: 3px solid #deb875;
+        padding: 10px;
+        width: 1200px;
+        height: 1100px;
+        background-color: #deb868;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    
+    
+    .calories,
+    hr{
+        display: none;
+    }
+
+    .cake, 
+    .bisquit, 
+    .pie{
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        background-color: #ffb366;
+        box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.3);
+    }
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(80, 75, 82);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 150px;
+        float: left;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+
+    .assortiment{
+        width: 1200px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, 345px);
+        grid-template-rows: repeat(3, 305px);
+        position: absolute;
+        top: 180px;
+        left: 100px;
+    }
+    
+    .name{
+        margin-left: 35px;
+        margin-top: 210px;
+        margin-bottom: 180px;
+    }
+    
+    .contacts{
+        display: inline-block;
+        justify-content: space-between;
+        width: 900px;
+        font-size: 25px;
+        margin-left: 15px;
+        position: absolute;
+        top: 1030px;
+    }
+
+    .copy{
+        position: absolute;
+        left: 880px;
+        top: 0px;
+    }
+    .link{
+        color:dodgerblue;
+        position: absolute;
+        top: 10px;
+    }
+    
+    .link::after{
+        content: '\2709';
+    }
+
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        width: 900px;
+        height: 80px;
+        background-color: initial;
+        text-align: center;
+    }
+    
+    .sidebar > nav{
+        display: none;
+    }
+
+    .buttons{
+        background-color: lightsalmon;
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 200px;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(255, 160, 122, 0.3);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .assortiment > .bisquit,
+    #cake:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .assortiment > .cake,
+    #bisquit:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .assortiment > .bisquit,
+    #pie:checked ~ .main > .assortiment > .cake{
+        display: none;
+    }
+
+    #bisquit:checked ~ .main > .assortiment,
+    #pie:checked ~ .main > .assortiment{
+        height: 600px;
+    }
+
+    #bisquit:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 410px;
+    }
+
+    #cake:checked ~ .main > .assortiment,
+    #cake:checked ~ .main > .assortiment{
+        height: 1040px;
+    }
+
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 730px;
+        left: 100px;
+    }
+
+    #bisquit:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 500px;
+    }
+
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 820px;
+    }
+}
+
+
+
+/* Desktop */
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    .main{
+        border: 2px solid #deb875;
+        background-color: bisque;
+        padding: 15px;
+        width: 1880px;
+        height: 1080px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+
+    
+    .cake,  
+    .pie{
+        border-radius: 10px;
+        border: 1px solid darkgray;
+        width: 390px;
+        height: 290px;
+        background-color: rgb(235, 235, 235);
+        margin-left: 200px;
+    }
+    .bisquit {
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    width: 390px;
+    height: 290px;
+    background-color: rgb(235, 235, 235);
+    margin-left: 200px;
+    }
+
+    
+    .cake:hover,
+    .bisquit:hover,
+    .pie:hover{
+        box-shadow: 3px 3px 3px 3px rgb(83, 83, 83);
+    }
+    
+    
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+        margin-right: 20px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    
+    .assortiment{
+        width: 1320px;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(3, 305px);
+        grid-auto-flow: inherit;
+        padding: inherit;
+    }
+    
+    .name{
+        margin-bottom: 180px;
+    }
+    
+    .calories{
+        margin-left: 25px;
+    }
+    
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-top: -30px;
+        margin-left: 220px;
+        margin-right: 1000px;
+        width: 700px;
+        font-weight: bold;
+    }
+    .copy {
+        margin-top: 30px;
+    }
+    .link{
+        color:dodgerblue;
+        margin-right: 1100px;
+        margin-left: 50px;
+    }
+    
+    .link:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 1300px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        width: 400px;
+        height: 902px;
+        background-color: rgb(235, 235, 235);
+        text-align: center;
+        margin-left:180px;
+    }
+    
+    .buttons{
+        background-color: lightsalmon;
+        font-size: larger;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        margin-left: 100px;
+        width: 200px;
+    }
+    
+    .buttons:hover{
+        background-color: rgb(255, 160, 122, 0.3);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .assortiment > .bisquit,
+    #cake:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    
+    #bisquit:checked ~ .main > .assortiment > .cake,
+    #bisquit:checked ~ .main > .assortiment > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .assortiment > .bisquit,
+    #pie:checked ~ .main > .assortiment > .cake{
+        display: none;
+    }
+    
+}
